@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;700&display=swap');
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Fira Sans', sans-serif;
+
+  & h2,
+  h3 {
+    color: #3eb4cd;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__back-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      padding: 10px;
+      width: 24px;
+      height: 24px;
+      color: white;
+      background-color: #d27a76;
+      border-radius: 50%;
+      cursor: pointer;
+      transition-property: transform background-color;
+      transition-duration: 200ms;
+
+      &:hover {
+        background-color: #d27b76c4;
+        transform: scale(95%);
+      }
+    }
+  }
+}
