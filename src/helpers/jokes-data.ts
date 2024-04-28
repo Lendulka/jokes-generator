@@ -60,3 +60,19 @@ const sourceOfJokes = [
         "id": 140
     }
 ]
+
+/*
+const generateJokesData = (type, count, source) => {
+    const data = [...source];
+    setJokesData(data
+      .filter(item => item.type === type)
+      .map((item, index) => ({...item, 'id': index}))
+      .slice(0, count));
+  };
+
+  const handleSendData = (data) => {
+    setUserName(data.name);
+    // fetchData(data.type, data.count);
+    generateJokesData(data.type, data.count, sourceOfJokes);
+  };
+  */

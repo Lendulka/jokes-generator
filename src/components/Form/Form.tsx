@@ -21,8 +21,6 @@ export const Form: React.FC<FormProps> = ({ onSubmitData }) => {
         count: 0,
     })
 
-    console.log(typeof (formData.count))
-
     const options = []
     for (let i = 0; i < 10; i++) {
         options.push(i + 1)
@@ -41,7 +39,6 @@ export const Form: React.FC<FormProps> = ({ onSubmitData }) => {
     }
 
     return (
-
         <form className="form" onSubmit={handleSubmit}>
             <label className="form__label">
                 Your name
@@ -84,7 +81,6 @@ export const Form: React.FC<FormProps> = ({ onSubmitData }) => {
 
             <button className="form__button" type="submit">Submit</button>
         </form>
-
     )
 }
 

@@ -14,7 +14,7 @@ interface JokesDataStructure {
 
 function App() {
 
-  const [userName, setUserName] = useState<string>()
+  const [userName, setUserName] = useState<string>("")
   const [jokesData, setJokesData] = useState<JokesDataStructure[]>([])
 
   const fetchData = async (type: string, count: number): Promise<void> => {
@@ -44,8 +44,7 @@ function App() {
           <h3>Please fill the form:</h3>
           <Form onSubmitData={handleSendData} />
         </div>
-      )
-      }
+      )}
     </div>
   )
 }

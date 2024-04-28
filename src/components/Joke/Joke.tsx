@@ -21,11 +21,15 @@ export const Joke: React.FC<JokeStructure> = ({ setup, punchline, showRating }) 
             </div>
             {showRating && (
                 <div className="joke__rating">
-                    <div className="joke__rating__icon"><HandThumbUpIcon
-                        onClick={() => { setThumbUp(thumbUp + 1) }} />+ {thumbUp}
+                    <div className="joke__rating__icon">
+                        <HandThumbUpIcon
+                            onClick={() => { setThumbUp(thumbUp + 1) }}
+                        />+ {thumbUp}
                     </div>
-                    <div className="joke__rating__icon"><HandThumbDownIcon
-                        onClick={() => { setThumbDown(thumbDown + 1) }} />+ {thumbDown}
+                    <div className="joke__rating__icon">
+                        <HandThumbDownIcon
+                            onClick={() => { setThumbDown(thumbDown + 1) }}
+                        />+ {thumbDown}
                     </div>
                 </div>
             )}
